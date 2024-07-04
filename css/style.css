@@ -1,0 +1,42 @@
+
+header img{
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 10%;
+}
+
+.principal{
+    width: 50%; /* para os conteúdos não ficarem colados nas laterais */
+    margin: 0 auto;
+    display: grid;/* utilizado para alinhar os elementos do container em duas dimensões */
+    grid-template-columns: 25% 75%; /* medida das colunas */
+    grid-template-areas: "cabecalho cabecalho"
+                        "secao barra_lateral"
+                        "aside aside";
+}
+
+header{
+    grid-area: cabecalho;
+}
+
+section{
+    grid-area: barra_lateral;
+}
+
+aside{
+    grid-area: aside;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
